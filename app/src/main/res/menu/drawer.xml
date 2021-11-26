@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/pointcharging"
+            android:title="포인트 충전" />
+        <item
+            android:id="@+id/history"
+            android:title="사용내역" />
+        <item
+            android:id="@+id/payment"
+            android:title="간편결제" />
+        <item
+            android:id="@+id/admin"
+            android:title="관리자 메뉴" />
+    </group>
+
+<!--    android:icon="@drawable/ic_launcher_foreground"-->
+</menu>

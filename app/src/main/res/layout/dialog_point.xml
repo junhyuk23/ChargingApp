@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Listview1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context=".PointActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="410dp"
+            android:layout_height="60dp"
+            android:padding="14dp"
+            android:stretchColumns="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <TableRow
+                android:layout_width="353dp"
+                android:layout_height="11dp">
+
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="72dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/stroke"
+                    android:text="1천" />
+
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="72dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/stroke"
+                    android:text="5천" />
+
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="72dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/stroke"
+                    android:text="1만" />
+
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="72dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/stroke"
+                    android:text="5만" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="72dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/stroke"
+                    android:text="10만" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TableRow
+                android:layout_width="353dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/pointtext2"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFFFF"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFFFF"
+                    android:gravity="center"
+                    android:text="P"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TableRow
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/test"
+                    android:layout_width="356dp"
+                    android:layout_height="wrap_content"
+                    android:text="결제"
+                    android:textSize="24sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

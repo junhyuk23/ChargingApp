@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_img"
+    tools:context=".RegisterActivity">
+
+    <include  layout="@layout/activity_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/high"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Listview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:gravity="bottom"
+                android:layout_width="381dp"
+                android:layout_height="74dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/passwordEdt"
+                android:gravity="bottom"
+                android:layout_width="0dp"
+                android:layout_height="74dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                app:layout_constraintEnd_toEndOf="@+id/emailEt"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/emailEt"
+                app:layout_constraintTop_toBottomOf="@+id/emailEt" />
+
+            <EditText
+                android:id="@+id/passwordcheckEdt"
+                android:layout_width="0dp"
+                android:layout_height="74dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:gravity="bottom"
+                android:minHeight="48dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                app:layout_constraintEnd_toEndOf="@+id/passwordEdt"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/passwordEdt"
+                app:layout_constraintTop_toBottomOf="@+id/passwordEdt" />
+
+            <EditText
+                android:id="@+id/NumberEt"
+                android:gravity="bottom"
+                android:layout_width="0dp"
+                android:layout_height="74dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:privateImeOptions="defaultInputmode=korean"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                app:layout_constraintEnd_toEndOf="@+id/passwordcheckEdt"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/passwordcheckEdt"
+                app:layout_constraintTop_toBottomOf="@+id/passwordcheckEdt" />
+
+            <Button
+                android:id="@+id/register2_btn"
+                android:layout_width="0dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/cofirm_button"
+                app:layout_constraintEnd_toEndOf="@+id/NumberEt"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/NumberEt"
+                app:layout_constraintTop_toBottomOf="@+id/NumberEt" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="4dp"
+                android:text="이메일"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/emailEt"
+                app:layout_constraintHorizontal_bias="0.006"
+                app:layout_constraintStart_toStartOf="@+id/emailEt"
+                app:layout_constraintTop_toTopOf="@+id/emailEt" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="4dp"
+                android:text="차량 번호"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/NumberEt"
+                app:layout_constraintHorizontal_bias="0.006"
+                app:layout_constraintStart_toStartOf="@+id/NumberEt"
+                app:layout_constraintTop_toTopOf="@+id/NumberEt" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="8dp"
+                android:text="비밀번호"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/passwordEdt"
+                app:layout_constraintHorizontal_bias="0.006"
+                app:layout_constraintStart_toStartOf="@+id/passwordEdt"
+                app:layout_constraintTop_toTopOf="@+id/passwordEdt" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="4dp"
+                android:text="비밀번호 확인"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/passwordcheckEdt"
+                app:layout_constraintHorizontal_bias="0.006"
+                app:layout_constraintStart_toStartOf="@+id/passwordcheckEdt"
+                app:layout_constraintTop_toTopOf="@+id/passwordcheckEdt" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
